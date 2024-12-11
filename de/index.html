@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
+    <title>Zer5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="site-logo">
+          <a href="#">
+            <img src="img/zur5-logo.png" alt="Zur5" />
+          </a>
+        </div>
+        <a href="#" class="language-switcher" data-lang="en">
+          <img src="img/flag-en.svg" alt="Flag English" />
+          <img src="img/flag-de.svg" alt="Flag German" />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section id="section1" class="order-summary-wrapper">
+          <div class="card order-summary-table-wrapper">
+            <h2>Gesamtübersicht</h2>
+            <div class="order-summary-table">
+              <table>
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>Profil</td>
+                    <td class="text-center">Menge</td>
+                    <td class="text-center">Einzelpreis</td>
+                    <td>Gesamt</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="review-deletion">
+                        <img
+                          src="https://www.zur5.net/static/mainpage/assets/google-icon.svg"
+                        />
+                        <span>Bewertungslöschung</span>
+                      </div>
+                    </td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">10.00€</td>
+                    <td>
+                      <div>20.00€</div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2" class="df">
+                      <div>Gesamt</div>
+                    </td>
+                    <td class="text-center">
+                      <div>2</div>
+                    </td>
+                    <td class="text-center"></td>
+                    <td>
+                      <div>20.00€</div>
+                      <small>netto</small>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="card order-summary">
+            <h2>Auftrag angenommen!</h2>
+            <p>adcastle GmbH |</p>
+            <p><strong>Offer-ID:</strong> 45am-4ipO</p>
+            <div class="footer">
+              Angebot angenommen am 11. Dezember 2024 04:18
+            </div>
+          </div>
+        </section>
+        <section id="section2" class="review">
+          <div class="card review-wrapper">
+            <h2>Verbesserung Ihres Google Durchschnitts</h2>
+            <p>
+              Nach dem erfolgreichen Löschen aller ausgewählten Bewertungen wird
+              sich Ihr Google-Durchschnitt wie folgt verbessern:
+            </p>
+            <div class="review-status">
+              <div class="card">
+                <h4>AKTUELLER STAND</h4>
+                <div class="stars-wrapper">
+                  <span class="stars"></span>
+                  <span class="review-count">3 Bewertungen</span>
+                </div>
+              </div>
+              <img class="arrow-right" src="img/arrow-right.gif" />
+              <div class="card">
+                <h4>NACH LÖSCHUNGEN</h4>
+                <div class="stars-wrapper">
+                  <span class="stars"></span>
+                  <span class="review-count">1 Bewertungen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section3" class="review-detail">
+          <div class="card review-detail-wrapper">
+            <h2 class="detail-load-title">
+              Bewertungen in der Einzelansicht
+              <span class="detail-load-time"
+                >Geladen am: 11. Dezember 2024</span
+              >
+            </h2>
+            <p>
+              Für das Profil "adcastle GmbH", werden wir die Löschung von
+              insgesamt 2 Bewertungen beantragen:
+            </p>
+            <div class="review-detail-table-wrapper">
+              <table class="table table-compact display dataTable" id="example">
+                <thead>
+                  <tr>
+                    <th
+                      class="sorting sorting_asc"
+                      tabindex="0"
+                      rowspan="1"
+                      colspan="1"
+                      aria-sort="ascending"
+                      aria-label="#: activate to sort column descending"
+                      style="width: 15px"
+                    >
+                      #
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Stars: activate to sort column ascending"
+                      style="width: 99px"
+                    >
+                      Stars
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Date: activate to sort column ascending"
+                      style="width: 98px"
+                    >
+                      Date
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Reviewer: activate to sort column ascending"
+                      style="width: 136px"
+                    >
+                      Reviewer
+                    </th>
+                    <th
+                      class="sorting"
+                      tabindex="0"
+                      rowspan="1"
+                      colspan="1"
+                      aria-label="Review text: activate to sort column ascending"
+                      style="width: 345px"
+                    >
+                      Review text
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="odd">
+                    <td class="sorting_1">1</td>
+                    <td class="text-x-yellow-600">
+                      <div class="d-flex star_counts">
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td class="whitespace-nowrap" style="max-width: 140px">
+                      vor einem Jahr
+                    </td>
+                    <td
+                      class="overflow-hidden text-ellipsis print:whitespace-normal"
+                      style="max-width: 200px"
+                    >
+                      Svetlana Kaioukova
+                    </td>
+                    <td class="whitespace-normal col-xl-4 col-lg-4">
+                      <p class="cursor-pointer">
+                        Auf meine Email wurde noch nicht geantwortet
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="even">
+                    <td class="sorting_1">2</td>
+                    <td>
+                      <div class="d-flex star_counts">
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+
+                        <svg
+                          class="w-4 h-4 print:w-3 print:h-3"
+                          fill="#FFB000"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          width="16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </td>
+                    <td class="whitespace-nowrap" style="max-width: 140px">
+                      vor einem Jahr
+                    </td>
+                    <td
+                      class="overflow-hidden text-ellipsis print:whitespace-normal"
+                      style="max-width: 200px"
+                    >
+                      Stefan Schönberg
+                    </td>
+                    <td class="whitespace-normal col-xl-4 col-lg-4">
+                      <p class="cursor-pointer">
+                        Ich hatte eine tolle Idee um mein Produkt medial zu
+                        platzieren, jedoch wollte der Mitarbeiter lieber an
+                        seinem Handy spielen, anstatt meine Anfrage aufzunehmen
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="card contact-wrapper">
+            <h4>
+              Bei Fragen zu diesem Angebot kontaktieren Sie uns jederzeit.
+            </h4>
+            <p>
+              <a href="mailto:info@zur5.net"
+                ><svg
+                  fill="none"
+                  height="18"
+                  viewBox="0 0 26 20"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.7148 0H2.28516C1.0267 0 0 1.03569 0 2.30769V17.6923C0 18.96 1.02213 20 2.28516 20H23.7148C24.9702 20 26 18.9678 26 17.6923V2.30769C26 1.04 24.9779 0 23.7148 0ZM23.3993 1.53846L13.0484 11.9914L2.60807 1.53846H23.3993ZM1.52344 17.3737V2.61892L8.86026 9.96456L1.52344 17.3737ZM2.60066 18.4615L9.94211 11.0477L12.5145 13.6232C12.8123 13.9213 13.2929 13.9204 13.5894 13.6208L16.0977 11.0878L23.3993 18.4615H2.60066ZM24.4766 17.3737L17.1749 10L24.4766 2.62626V17.3737Z"
+                    fill="#5F6872"
+                  ></path>
+                </svg>
+                info@zur5.net</a
+              >
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="copyright">All rights reserved © 2023</div>
+        <div class="link">
+          <a href="https://www.zur5.de/impressum" target="_blank">Impressum</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+      var currentLanguage = "de";
+      var languageSettings = {
+        en: {
+          decimal: "",
+          emptyTable: "No data available",
+          info: "_START_ to _END_ of _TOTAL_ entries",
+          infoEmpty: "No data available",
+          infoFiltered: "(filtered from _MAX_ total entries)",
+          infoPostFix: "",
+          thousands: ",",
+          lengthMenu: "_MENU_ entries",
+          loadingRecords: "Loading...",
+          processing: "",
+          search: "Search:",
+          zeroRecords: "No matching records found",
+          paginate: {
+            first: "First",
+            last: "Last",
+            next: "Next",
+            previous: "Previous",
+          },
+          aria: {
+            sortAscending: ": activate to sort column ascending",
+            sortDescending: ": activate to sort column descending",
+          },
+        },
+        de: {
+          decimal: "",
+          emptyTable: "Keine Daten vorhanden",
+          info: "_START_ bis _END_ von _TOTAL_ Einträgen",
+          infoEmpty: "Keine Daten vorhanden",
+          infoFiltered: "(gefiltert von _MAX_ Einträgen)",
+          infoPostFix: "",
+          thousands: ",",
+          lengthMenu: "_MENU_ Einträge anzeigen",
+          loadingRecords: "Lädt...",
+          processing: "",
+          search: "Suche:",
+          zeroRecords: "Kein Eintrag gefunden",
+          paginate: {
+            first: "Erste",
+            last: "Letzte",
+            next: "Nächste",
+            previous: "Vorherige",
+          },
+          aria: {
+            sortAscending: ": Aufsteigend sortieren",
+            sortDescending: ": Absteigend sortieren",
+          },
+        },
+      };
+
+      var table = new DataTable("#example", {
+        language: languageSettings[currentLanguage],
+      });
+    </script>
+  </body>
+</html>
