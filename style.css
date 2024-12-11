@@ -192,11 +192,17 @@ main .container {
 
 .stars-wrapper {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rating-wrapper {
+  display: flex;
   gap: 10px;
 }
 
 .stars {
+  position: relative;
   display: inline-block;
   font-size: 45px;
   font-family: Times;
@@ -210,6 +216,13 @@ main .container {
   background: linear-gradient(90deg, #fc0 var(--percent), #ddd var(--percent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.rating {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  margin: auto;
+  text-align: center;
 }
 
 .review-count {
