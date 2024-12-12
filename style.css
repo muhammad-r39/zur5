@@ -213,7 +213,11 @@ main .container {
 .stars::after {
   content: "★★★★★";
   letter-spacing: 3px;
-  background: linear-gradient(90deg, #fc0 var(--percent), #ddd var(--percent));
+  background: linear-gradient(
+    90deg,
+    #fc0 calc(var(--percent) * 20%),
+    #ddd calc(var(--percent) * 20%)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
