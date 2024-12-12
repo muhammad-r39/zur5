@@ -418,14 +418,21 @@ Responsive CSS
 }
 
 @media screen and (max-width: 768px) {
-  .order-summary-table {
-    overflow-x: scroll;
-  }
   .review-detail {
     display: none;
   }
   .mobile-review-detail {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .order-summary-table {
+    font-size: 14px;
+    word-break: break-all;
+  }
+  .review-deletion {
+    gap: 5px;
   }
 }
 
