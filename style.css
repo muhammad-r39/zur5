@@ -437,6 +437,9 @@ Responsive CSS
   .review-deletion {
     gap: 5px;
   }
+  .review-deletion img {
+    width: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
