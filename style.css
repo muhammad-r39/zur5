@@ -199,6 +199,7 @@ main .container {
 .rating-wrapper {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .stars {
@@ -248,6 +249,33 @@ main .container {
 
 .review-detail-table-wrapper {
   padding: 30px 0 0;
+}
+
+.review-detail .stars {
+  font-size: 32px;
+}
+
+.review-detail .status {
+  display: inline-block;
+  font-size: 80%;
+  font-weight: 700;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+.de .review-detail .status {
+  width: 100px;
+}
+
+.review-detail .status.deleted {
+  background-color: #04cf04;
+}
+
+.review-detail .status.in-progress {
+  background-color: #ff9800;
 }
 
 .contact-wrapper {
@@ -300,10 +328,41 @@ footer a {
 }
 
 .mobile-reviews-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 10px 0 0;
+  gap: 50px;
+  padding: 38px 0 0;
+}
+
+.mobile-reviews-wrapper .review-detail-card {
+  position: relative;
+}
+
+.mobile-reviews-wrapper .progress-status {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  display: inline-block;
+  font-size: 80%;
+  font-weight: 700;
+  color: #fff;
+  padding: 6px 10px 4px;
+  border-radius: 7px 7px 0 0;
+  min-width: 80px;
+  text-align: center;
+}
+
+.de .mobile-reviews-wrapper .progress-status {
+  min-width: 100px;
+}
+
+.mobile-reviews-wrapper .progress-status.deleted {
+  background-color: #04cf04;
+}
+
+.mobile-reviews-wrapper .progress-status.in-progress {
+  background-color: #ff9800;
 }
 
 .mobile-review-detail .review-metadata {
@@ -332,6 +391,10 @@ footer a {
 .mobile-stars {
   display: flex;
   gap: 5px;
+}
+
+.mobile-stars .stars {
+  font-size: 32px;
 }
 
 .review-metadata .rate-time {
