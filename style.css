@@ -436,7 +436,7 @@ Responsive CSS
   .review-deletion {
     gap: 5px;
   }
-  .de .review-deletion span {
+  .review-deletion span {
     hyphens: auto;
   }
   .review-deletion img {
