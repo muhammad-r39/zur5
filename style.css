@@ -427,8 +427,11 @@ Responsive CSS
 }
 
 @media screen and (max-width: 600px) {
+  .order-summary-table-wrapper td {
+    padding: 10px 1px;
+  }
   .order-summary-table {
-    font-size: 14px;
+    font-size: 13px;
     word-break: break-all;
   }
   .review-deletion {
