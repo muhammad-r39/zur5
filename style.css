@@ -432,6 +432,8 @@ Responsive CSS
   }
   .order-summary-table {
     font-size: 13px;
+  }
+  .de .order-summary-table {
     word-break: break-all;
   }
   .review-deletion {
