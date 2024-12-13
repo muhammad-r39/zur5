@@ -440,7 +440,7 @@ Responsive CSS
     hyphens: auto;
   }
   .review-deletion img {
-    width: 20px;
+    display: none;
   }
 }
 
