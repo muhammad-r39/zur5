@@ -146,6 +146,30 @@ main .container {
   flex-flow: column;
 }
 
+.order-summary .user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-summary .user img {
+  width: auto;
+  height: 20px;
+  margin-bottom: 1px;
+}
+
+.order-summary .hash {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.order-summary .hash img {
+  width: auto;
+  height: 20px;
+  margin-bottom: 1px;
+}
+
 .order-summary h2 {
   color: #4caf50;
 }
@@ -231,6 +255,13 @@ main .container {
 
 .review-count {
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-count img {
+  width: 30px;
 }
 
 .detail-load-title {
